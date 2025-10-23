@@ -1,0 +1,164 @@
+body {
+    background-color:  rgba(2, 11, 0, 0.831);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.game-container {
+    position: relative;
+}
+.gameBox {
+    background-color: white;
+    margin: 60px auto;
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.player1 {
+    background-color: rgba(135, 139, 53, 0.509);
+    width: 450px;
+}
+#score1, #score2 {
+    font-size: 2em;
+}
+#info  {
+    background-color: rgb(65, 63, 62);
+    color: rgb(142, 253, 7);
+    /* display: none; */
+    /* max-width: 900px; */
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px;
+    position: absolute;
+    left: 45%;
+    top: -10%; 
+    text-align: center;
+}
+.player2 {
+    background-color: rgba(135, 139, 53, 0.509);
+    width: 450px;
+}
+.currentScore {
+    background-color: rgb(3, 191, 75);
+    width: 100px;
+    margin: 290px auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+}
+button:hover {
+    background-color: rgba(85, 84, 84, 0.571);
+    color: white;
+}
+.newGame {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+}
+.roll {
+    position: absolute;
+    left: 45%;
+    top: 74%;
+}
+.hold {
+    position: absolute;
+    left: 45%;
+    top: 84%;
+}
+img {
+    max-width: 60px;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    left: 47%;
+    top: 32%;
+    box-shadow: 4px 4px 5px;
+    border-color: hwb(0 0% 100% / 0.525);
+}
+.player-active {
+    background-color: rgba(88, 88, 88, 0.913);
+}
+.winner {
+    background-color: #4caf50;
+    color: white;
+}
+
+.rules {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.game-rules {
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 20px 25px;
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+
+.game-rules h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.game-rules ol {
+  padding-left: 20px;
+  color: #444;
+}
+
+.game-rules li {
+  margin-bottom: 10px;
+}
+
+.game-rules em {
+  color: #d35400;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.game-rules .tip {
+  background: #fffbe6;
+  border-left: 4px solid #f1c40f;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-style: italic;
+  margin-top: 15px;
+}
+#toggleRulesBtn {
+    background-color: rgb(65, 63, 62);
+    color: rgb(142, 253, 7);
+    /* display: none; */
+    /* max-width: 900px; */
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px;
+    position: absolute;
+    top: -10%; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    /* border-radius: 50%; */
+}
