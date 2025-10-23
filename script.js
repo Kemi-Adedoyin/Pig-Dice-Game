@@ -94,11 +94,11 @@ function nextPlayer(){
     if(activePlayer===1){
         toggleButtons(true);
         robotPlays();
-        info.innerText = "It's computers turn"
+        info.innerText = "It's Robots turn..."
     }
     else {
         toggleButtons(false);
-        info.innerText = "Your turn to play"
+        info.innerText = "Your turn to play..."
     }
 }
 
@@ -169,10 +169,10 @@ function checkWinner() {
             player2.classList.add("winner");
         }
         if(activePlayer ===0){
-            alert("🏅🥳🎉 Player 1 Wins!!")
+            alert("🏅🥳🎉 You Win!!")
         }
         else {
-            alert("🤖 Computer Wins!!")
+            alert("🤖 Robot Wins!!")
         }
         // player1.classList.remove("player-active");
         // player2.classList.remove("player-active");
@@ -183,13 +183,25 @@ function checkWinner() {
 function toggleRules() {
   const rules = document.getElementById("rulesContainer");
   const btn = document.getElementById("toggleRulesBtn");
-  const isHidden = rules.style.display === "none";
-  gameBox.style.display = "none";
-  rollBtn.style.display = "none";
-  gameBtn.style.display = "none";
-  holdBtn.style.display = "none";
-//   rulesText.style.display = isVisible ? 'none' : 'block';
-//     toggleBtn.textContent = isVisible ? '📜 Show Rules' : '❌ Hide Rules';
-  rules.style.display = isHidden ? "block" : "none";
-  btn.innerText = isHidden ? "❌ Hide" : "📜Rules";
+
+  const isCurrentlyHidden = window.getComputedStyle(rules).display === "none";
+
+  if (isCurrentlyHidden) {
+    rules.style.display = "block";
+    btn.textContent = "❌";
+    gameBox.style.display = "none";
+    rollBtn.style.display = "none";
+    gameBtn.style.display = "none";
+    holdBtn.style.display = "none";
+    diceImg.style.display = "none";
+    info.style.display = "none";
+  } else {
+    rules.style.display = "none";
+    btn.textContent = "Game Rules";
+    gameBox.style.display = "flex";
+    rollBtn.style.display = "inline-block";
+    gameBtn.style.display = "inline-block";
+    holdBtn.style.display = "inline-block";
+    info.style.display = "inline-block";
+  }
 }

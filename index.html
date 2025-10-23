@@ -10,31 +10,32 @@
 <body>
     <div class="game-container">
         <span id="info">PIG DICE GAME</span>
-        <button id="toggleRulesBtn" class="rules.btn" onclick="toggleRules()">Game Rules</button>
-<div id="rulesContainer" class="game-rules" style="display:none;">
-  <div id="GameMessage" class="game-rules">
-            <h2>🎲 Game Rules</h2>
-  <p><strong>Welcome to the Dice Duel!</strong><br>
-  Battle it out against the computer — roll, hold, and race to 100 points.</p>
+        <button id="toggleRulesBtn" onclick="toggleRules()">Game Rules</button>
 
-  <ol>
-    <li><strong>🧍 Player 1 starts first:</strong> Click <em>Roll Dice</em> to roll. Each roll adds points to your current round score.</li>
-    <li><strong>⚠️ Beware of rolling a 1:</strong> If you roll a 1, you lose your current round’s points and your turn ends immediately.</li>
-    <li><strong>✋ Play it safe with Hold:</strong> Click <em>Hold</em> to bank your round points and pass the turn to the computer.</li>
-    <li><strong>🤖 The Computer plays automatically:</strong> It rolls a few times unless it rolls a 1 — then it loses its round score!</li>
-    <li><strong>🏆 First to reach 100 points wins:</strong> Luck and timing are everything. Be bold, but don’t get greedy!</li>
-  </ol>
+<div id="rulesContainer" class="game-rules" style="display: none;">
+  <div id="GameMessage">
+    <h2>🎲 Game Rules</h2>
+    <p><strong>Welcome to the Dice Duel!</strong><br>
+      Battle it out against the computer — roll, hold, and race to 100 points.</p>
 
-  <p class="tip"><strong>💡 Tip:</strong> Take smart risks early, but know when to hold your ground!</p>
-        </div>
+    <ol>
+      <li><strong>🧍 Player 1 starts first:</strong> Click <em>Roll Dice</em> to roll. Each roll adds points to your current round score.</li>
+      <li><strong>⚠️ Beware of rolling a 1:</strong> If you roll a 1, you lose your current round’s points and your turn ends immediately.</li>
+      <li><strong>✋ Play it safe with Hold:</strong> Click <em>Hold</em> to bank your round points and pass the turn to the computer.</li>
+      <li><strong>🤖 The Computer plays automatically:</strong> It rolls a few times unless it rolls a 1 — then it loses its round score!</li>
+      <li><strong>🏆 First to reach 100 points wins:</strong> Luck and timing are everything. Be bold, but don’t get greedy!</li>
+    </ol>
+
+    <p class="tip"><strong>💡 Tip:</strong> Take smart risks early, but know when to hold your ground!</p>
+  </div>
 </div>
         <div class="gameBox">
             <div class="player1 player-active">
-                <h2>Player 1</h2>
+                <h2>👤You</h2>
                 <span id="score1">0</span>
                 <div class="currentScore">
                     <h3>Rolls:</h3>
-                    <span id="current-value1">0</span>
+                    <span id="current-value1" class="current">0</span>
                 </div>
             </div>
             <div class="player2">
@@ -42,7 +43,7 @@
                 <span id="score2">0</span>
                 <div class="currentScore">
                     <h3>Rolls:</h3>
-                    <span id="current-value2">0</span>
+                    <span id="current-value2" class="current">0</span>
                 </div>
             </div>
         </div>

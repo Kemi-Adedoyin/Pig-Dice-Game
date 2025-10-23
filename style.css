@@ -147,11 +147,10 @@ img {
   font-style: italic;
   margin-top: 15px;
 }
-#toggleRulesBtn {
+/* #toggleRulesBtn {
     background-color: rgb(65, 63, 62);
     color: rgb(142, 253, 7);
-    /* display: none; */
-    /* max-width: 900px; */
+    
     border-radius: 5px;
     font-weight: bold;
     padding: 12px;
@@ -160,5 +159,23 @@ img {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    /* border-radius: 50%; */
+} */
+
+#toggleRulesBtn {
+  background-color: rgb(65, 63, 62);
+  border: none;
+  color: rgb(142, 253, 7);
+  position: absolute;
+  top: -10%;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 50px 0;
+  transition: background 0.2s ease;
+}
+#toggleRulesBtn:hover {
+  background: #3dbb91;
+}
+.current {
+    font-size: 1.3em;
 }
